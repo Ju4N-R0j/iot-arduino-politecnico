@@ -15,7 +15,7 @@ El proyecto tiene tres entregas. Cada una está en su carpeta, con el código fu
 
 1. Entrar a <https://wokwi.com> y crear un proyecto nuevo de **Arduino Uno**.
 2. Reemplazar el contenido de `sketch.ino` y `diagram.json` por los de la carpeta de la entrega.
-3. Presionar ▶ (Start the simulation) y usar el monitor serial que aparece abajo.
+3. Presionar (Start the simulation) y usar el monitor serial que aparece abajo.
 
 También se puede abrir directamente el enlace público de Wokwi de cada entrega (tabla de arriba).
 
