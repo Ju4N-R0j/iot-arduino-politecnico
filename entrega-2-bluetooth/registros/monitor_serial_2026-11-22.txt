@@ -1,0 +1,27 @@
+Registro original del monitor serial de Wokwi
+Proyecto: Entrega 2 IoT - Comunicacion Bluetooth (UART) con Arduino UNO
+Fecha de la corrida: 2026-11-22 (hora Colombia, aprox. 20:40)
+Simulador: Wokwi (https://wokwi.com), placa Arduino UNO, UART 9600 baudios 8N1
+Comandos enviados en orden: V, R, A, 0, X, v, RA0 (los tres ultimos en una sola linea)
+Texto copiado tal cual del monitor serial:
+------------------------------------------------------------------------------
+Sistema listo. UART 9600 baudios 8N1.
+Comandos: V=verde  R=rojo  A=ambos  0=apagar
+[t=15407 ms] Recibido 'V' -> LED verde ENCENDIDO | verde=1 rojo=0
+   proceso=48 us | envio UART=69.96 ms (67 car.) | validos=1 invalidos=0
+[t=18447 ms] Recibido 'R' -> LED rojo ENCENDIDO | verde=0 rojo=1
+   proceso=48 us | envio UART=68.92 ms (66 car.) | validos=2 invalidos=0
+[t=20260 ms] Recibido 'A' -> Ambos LED ENCENDIDOS | verde=1 rojo=1
+   proceso=48 us | envio UART=71.01 ms (68 car.) | validos=3 invalidos=0
+[t=27902 ms] Recibido '0' -> Ambos LED APAGADOS | verde=0 rojo=0
+   proceso=48 us | envio UART=68.92 ms (66 car.) | validos=4 invalidos=0
+[t=29507 ms] Recibido 'X' -> COMANDO INVALIDO, use V, R, A o 0 | verde=0 rojo=0
+   proceso=52 us | envio UART=84.58 ms (81 car.) | validos=4 invalidos=1
+[t=30937 ms] Recibido 'V' -> LED verde ENCENDIDO | verde=1 rojo=0
+   proceso=48 us | envio UART=69.96 ms (67 car.) | validos=5 invalidos=1
+[t=36171 ms] Recibido 'R' -> LED rojo ENCENDIDO | verde=0 rojo=1
+   proceso=48 us | envio UART=68.92 ms (66 car.) | validos=6 invalidos=1
+[t=36401 ms] Recibido 'A' -> Ambos LED ENCENDIDOS | verde=1 rojo=1
+   proceso=48 us | envio UART=71.01 ms (68 car.) | validos=7 invalidos=1
+[t=36634 ms] Recibido '0' -> Ambos LED APAGADOS | verde=0 rojo=0
+   proceso=48 us | envio UART=68.92 ms (66 car.) | validos=8 invalidos=1

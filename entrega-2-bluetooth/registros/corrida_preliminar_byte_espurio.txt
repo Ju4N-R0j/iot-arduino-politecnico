@@ -1,0 +1,19 @@
+Corridas preliminares del 2026-11-22 (versiones iniciales del codigo, antes del filtro de bytes).
+Texto transcrito de la captura evidencias/00b_corrida_preliminar_byte_espurio.jpg
+(no se copio como texto; el caracter recibido se ve como una vocal con tilde, es un byte fuera
+del rango ASCII imprimible).
+
+Corrida 1 (sin pull-up en D2):
+  Sistema listo. UART 9600 baudios 8N1.
+  Comandos: V=verde  R=rojo  A=ambos  0=apagar
+  [t=91 ms] Recibido '<byte no ASCII>' -> COMANDO INVALIDO, use V, R, A o 0 | verde=0 rojo=0
+     proceso=48 us | envio UART=97.87 ms | validos=0 invalidos=1
+  (en esa version el tiempo de envio incluia tambien la transmision por SoftwareSerial)
+
+Corrida 2 (con pull-up interna en D2, sin filtro):
+  [t=91 ms] Recibido '<byte no ASCII>' -> COMANDO INVALIDO ... envio UART=81.45 ms (78 car.)
+  La pull-up sola no elimino el byte espurio.
+
+Corridas 3 y final (con filtro de bytes no imprimibles):
+  No llego ningun byte espurio; el filtro habria impreso "Byte no valido 0x.. descartado".
+  No se pudo confirmar la causa exacta.
